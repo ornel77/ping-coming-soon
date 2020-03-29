@@ -14,4 +14,164 @@
 
 body {
     font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: var(--gray);
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+header img {
+    width: 10%;
+}
+
+header h1 {
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+header span {
+    font-weight: 700;
+    color: black;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: black;
+}
+
+header form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+header form label {
+    display: none;
+
+}
+
+header form input {
+    padding: 15px 30px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--pale-blue);
+    width: 70%;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+header form input::placeholder {
+    color: var(--pale-blue);
+}
+
+header form button {
+    width: 40%;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-size: 1rem;
+    border-radius: 40px;
+    box-shadow: 10px 14px 15px -12px rgba(0,0,0,0.75);
+    outline: none;
+    cursor: pointer;
+    padding: 15px 30px;
+
+}
+
+header form button:hover {
+    opacity: 0.8;
+}
+
+header .err-msg {
+    color: var(--light-red);
+    text-align: left;
+    display: none;
+}
+
+
+/* ---------------------------------- main ---------------------------------- */
+main {
+    margin: 100px 0;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+.socials a {
+    color: var(--blue);
+    border: 1px solid var(--gray);
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.socials a:hover {
+    background: var(--blue);
+    color: white;
+    border: none;
+}
+
+.copyright {
+    margin: 40px 0;
+    font-size: 0.8rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 400px;
+        height: 100vh;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header img {
+        width: 25%;
+    }
+
+    header form  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    header form button {
+        width: 100%;
+    }
+
+    main {
+        margin: 60px 0;
+    }
+
+    footer {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 300px;
+    }
 }
